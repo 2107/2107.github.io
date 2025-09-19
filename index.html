@@ -30,12 +30,19 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        h1 {
-            text-align: center;
-        }
-
         img {
             max-width: 100%;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
         }
 
         /* 미디어 쿼리: 모바일 화면에 대한 추가 스타일 */
@@ -49,7 +56,9 @@
 </head>
 <body>
     <div class="container">
-        <h1><img src="cover.jpg" alt="변신 달리기"></h1>
+        <h1 class="visually-hidden">변신 달리기</h1>
+
+        <p><img src="cover.jpg" alt="변신 달리기"></p>
         
         <dl>
             <dt>발행일</dt>
