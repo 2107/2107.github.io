@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 홈페이지</title>
+    <style>
+        /* 모든 요소에 box-sizing 적용하여 크기 계산 방식 변경 */
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* body 스타일: 여백 제거 및 폰트 설정 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* 컨테이너: 화면 크기에 맞춰 중앙 정렬 및 최대 너비 설정 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* 미디어 쿼리: 모바일 화면에 대한 추가 스타일 */
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>안녕하세요!</h1>
+        <p>이것은 PC와 모바일 화면에서 모두 잘 보이는 반응형 웹 페이지입니다.</p>
+        <p>여기에 본문 내용을 채워나가면 됩니다.</p>
+    </div>
+</body>
+</html>
