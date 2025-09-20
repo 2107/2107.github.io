@@ -12,12 +12,15 @@
         
         /* body 스타일: 여백 제거 및 폰트 설정 */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+        }
+
+        img {
+            max-width: 100%;
         }
 
         /* 컨테이너: 화면 크기에 맞춰 중앙 정렬 및 최대 너비 설정 */
@@ -28,14 +31,6 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        p {
-            text-align: center;
-        }
-
-        img {
-            max-width: 100%;
         }
 
         .visually-hidden {
@@ -62,7 +57,19 @@
     <div class="container">
         <h1 class="visually-hidden">변신 달리기</h1>
 
-        <p><img src="cover.jpg" alt="변신 달리기"></p>
+        <p style="text-align: center;"><img src="cover.jpg" alt="변신 달리기 표지"></p>
+
+        <h2>소식</h2>
+
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/p/DO0Tcp0k3as/?utm_source=ig_web_button_share_sheet">
+                    서울형책방: 독립출판 그림책 전시회 (2025.9.24~10.12)
+                </a>
+            </li>
+        </ul>
+
+        <hr>
         
         <dl>
             <dt>발행일</dt>
